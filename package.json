@@ -1,0 +1,13 @@
+{
+  "name": "loading test",
+  "description": "Install external libraries",
+  "dependencies": {
+    "jquery": "2.1.0"
+  },
+  "devDependencies": {
+    "systemjs": "^0.19.35"
+  },
+  "scripts": {
+   
+  }
+}

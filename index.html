@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Loading example</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript"
+          src="./system.src.js"></script>
+  
+
+  <script type="text/javascript">
+    SystemJS.config({
+      baseURL: './',
+      packageConfigPaths: ['node_modules/*/package.json'],
+      defaultJSExtensions: true,
+      map: {
+        'jquery': 'node_modules/jquery/dist/jquery.js'
+        // 'lt-web': '../../main/webapp/WEB-INF/js/rqlibs/local/lt-web',
+        // 'react': '../../../node_modules/react/dist/react.min.js',
+        // 'react-dom': '../../../node_modules/react-dom/dist/react-dom.js'
+      }
+    });
+  </script>
+</head>
+<body>
+<h2>WidgetsWrapper Demo Page</h2>
+<div id="container">
+  <div id="widgetContainer">holaa</div>
+</div>
+<script type="text/javascript">
+  SystemJS.import('./script.js');
+</script>
+
+</body>
+</html>
